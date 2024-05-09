@@ -1,0 +1,89 @@
+.form {
+  display: flex;
+  gap: 200px;
+  justify-content: space-between;
+  margin-top: 50px;
+
+  &__header {
+    color: #343d5e;
+    font-size: 48px;
+    font-weight: 900;
+  }
+
+  &__switcher {
+    display: flex;
+    justify-content: center;
+
+    &__block {
+      border: 2px solid #343d5e;
+      padding: 8px 16px;
+      font-size: 14px;
+      cursor: pointer;
+      transition: all 0.3s;
+      font-weight: 600;
+      color: #343d5e;
+
+      &--selected {
+        color: #fff;
+        background-color: #343d5e;
+      }
+
+      &:first-child {
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        border-right: 1px solid #343d5e;
+      }
+      &:last-child {
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        border-left: 1px solid #343d5e;
+      }
+    }
+  }
+
+  &__column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 40%;
+  }
+
+  &__row {
+    display: flex;
+    width: 100%;
+    gap: 20px;
+    position: relative;
+
+    .logo-input {
+      position: absolute;
+      top: 50%;
+      right: -100px;
+      color: #87addb;
+      font-size: 14;
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    .input-container {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      gap: 5px;
+
+      label {
+        align-self: flex-start;
+        font-size: 14px;
+        font-weight: 600;
+        color: #b1b2b6;
+      }
+
+      input {
+        background-color: #f3f6fb;
+        border: none;
+        font-size: 16px;
+        border-radius: 5px;
+        padding: 10px;
+      }
+    }
+  }
+}
