@@ -2,9 +2,10 @@ import React, { useState } from "react";
 import FormHeader from "../formSection/FormHeader";
 import classes from "./HelpTypesSection.module.scss";
 import HelpTypesList from "./HelpTypesList";
+import HelpTypeWindow from "./helpTypeWindow/HelpTypeWindow";
 
 const HelpTypesSection = () => {
-  const [selectedItem, setSelectedItem] = useState(null);
+  const [selectedItem, setSelectedItem] = useState("make");
 
   const selectBlockHandler = (e) => {
     setSelectedItem(e.currentTarget.id);
@@ -18,6 +19,8 @@ const HelpTypesSection = () => {
         selectBlockHandler={selectBlockHandler}
         selectedItem={selectedItem}
       />
+      <HelpTypeWindow selectedItem={selectedItem} />
+      <button>Допомогти</button>
     </div>
   );
 };

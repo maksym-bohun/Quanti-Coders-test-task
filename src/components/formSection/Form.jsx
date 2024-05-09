@@ -14,7 +14,9 @@ const Form = () => {
       <div
         className={`${classes["form__column"]} ${classes["form__column--left"]}`}
       >
-        <div className={classes["form__row"]}>
+        <div
+          className={`${classes["form__row"]} ${classes["form__row--multiple"]}`}
+        >
           <InputContainer id="name" type="text">
             Імʼя
           </InputContainer>
@@ -51,7 +53,9 @@ const Form = () => {
             Країна
           </InputContainer>
         </div>
-        <div className={classes["form__row"]}>
+        <div
+          className={`${classes["form__row"]} ${classes["form__row--multiple"]}`}
+        >
           <InputContainer id="city" type="text">
             Місто
           </InputContainer>
