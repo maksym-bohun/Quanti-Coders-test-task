@@ -1,0 +1,47 @@
+.help-types {
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__block {
+    display: flex;
+    align-items: center;
+    color: #d0d6e1;
+    font-weight: 600;
+    font-size: 18px;
+    gap: 20px;
+    cursor: pointer;
+
+    &.active > .icon-container {
+      background-color: #956296;
+      border-color: #956296;
+    }
+
+    &.active > p {
+      color: #4b5068;
+      font-weight: 800;
+    }
+
+    p {
+      width: 100px;
+      text-align: start;
+    }
+
+    .icon-container {
+      border: 2px solid #d0d6e1;
+      display: flex;
+      height: 80px;
+      width: 80px;
+      border-radius: 15px;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s;
+
+      img {
+        height: 50px;
+        width: 50px;
+      }
+    }
+  }
+}
